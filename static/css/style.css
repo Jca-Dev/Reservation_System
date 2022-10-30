@@ -1,0 +1,22 @@
+body{
+    background:rgb(0, 0, 0)
+}
+
+#background_img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 77%;
+}
+
+span {
+    padding-inline: 6.5em;
+}
+
+.txt {
+    font-size: 17px;
+}
+
+#ftr {
+    padding-bottom: 15px;
+}

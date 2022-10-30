@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,17 +7,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- 
-    {% load static %}  
-
-    <script src="{% static '/workspace/Reservation_System/static/js/script.js' %}"></script>
-    <script src="{% static '/workspace/Reservation_System/static/css/style.css' %}"></script>
---> 
+ 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
         type="text/css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <title>Gastro</title>
 </head>
 
@@ -23,7 +21,7 @@
 
     <header>
         <!-- top navbar -->
-        <nav class="light-blue darken-1">
+        <nav class="grey darken-3">
             <div class="nav-wrapper">
             <a href="{% url 'home' %}" class="left brand-logo">Gastro</a>
             <ul class="right">
@@ -33,20 +31,22 @@
             </div>
         </nav>
     </header>
+    <div id="img-c">
+        <img id="background_img" src="https://res.cloudinary.com/dan6hjcvr/image/upload/v1667143284/pexels-photo-260922_j98eum.webp" alt="Image of a resturant dining table">
+    </div>
 
     <main class="container">
         {% block content %}
         {% endblock %}
     </main>
 
-    <footer class="page-footer blue darken-3">
-        <div class="footer-copyright">
-            <div class="container">
-            <p class="text-center text-white">Follow us: <i class="fab fa-facebook-square ms-3"></i>
-                <i class="fab fa-twitter-square ms-3"></i>
-                <i class="fab fa-instagram-square ms-3"></i>
-            <a class="white-text right" href="#" target="_blank">&copy; JCA-DEV</a>
-            </div>
+    <footer class="page-footer grey darken-3">
+        <div id="ftr">
+            <span class="txt">Follow us: </span> 
+            <span><i class="fab fa-2x fa-facebook-square"></i></span>
+            <span><i class="fab fa-2x fa-twitter-square"></i></span>
+            <span><i class="fab fa-2x fa-instagram-square"></i></span>
+            <span class="txt"><i>&copy; JCA-DEV</i></span>
         </div>
     </footer>
 </body>
