@@ -41,11 +41,22 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
     'reservation_manager',
 ]
+
+SITE_ID = 1
+
+LOGIN_REDIRECT_URL = 'reservations'
+
+ACCOUNT_EMAIL_VERIFICATION = 'none'
+
+LOGOUT_REDIRECT_URL = '/'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

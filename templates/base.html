@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
@@ -20,16 +20,30 @@
 <body>
 
     <header>
-        <!-- top navbar -->
-        <nav class="grey darken-1">
-            <div class="nav-wrapper">
-            <a id="logo" href="{% url 'home' %}" class="left brand-logo">Gastro</a>
-            <ul class="right">
-                <li><a href="{% url 'reservations' %}">Make a reservation</a></li>
-                <li><a href="{% url 'menu' %}">See our menu</a></li>
-            </ul>
+        <nav class="navbar grey darken-2">
+            <div class="container-fluid">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Gastro</a></li>
+                <li><a href="#">Look At Our Menu</a></li>
+                <li><a href="#">Make A Reservation</a></li>
+              </ul>
+              <ul class="nav navbar-nav right">
+                {% if user.is_authenticated %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
+                    </li>
+                    {% else %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'account_signup' %}">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'account_login' %}">Login</a>
+                    </li>
+                    {% endif %}
+              </ul>
             </div>
-        </nav>
+          </nav>
+       
     </header>
     <main class="container">
         {% block content %}
