@@ -21,9 +21,9 @@
 
     <header>
         <!-- top navbar -->
-        <nav class="grey darken-3">
+        <nav class="grey darken-1">
             <div class="nav-wrapper">
-            <a href="{% url 'home' %}" class="left brand-logo">Gastro</a>
+            <a id="logo" href="{% url 'home' %}" class="left brand-logo">Gastro</a>
             <ul class="right">
                 <li><a href="{% url 'reservations' %}">Make a reservation</a></li>
                 <li><a href="{% url 'menu' %}">See our menu</a></li>
@@ -31,16 +31,12 @@
             </div>
         </nav>
     </header>
-    <div id="img-c">
-        <img id="background_img" src="https://res.cloudinary.com/dan6hjcvr/image/upload/v1667143284/pexels-photo-260922_j98eum.webp" alt="Image of a resturant dining table">
-    </div>
-
     <main class="container">
         {% block content %}
         {% endblock %}
     </main>
 
-    <footer class="page-footer grey darken-3">
+    <footer class="page-footer grey darken-1">
         <div id="ftr">
             <span class="txt">Follow us: </span> 
             <span><i class="fab fa-2x fa-facebook-square"></i></span>

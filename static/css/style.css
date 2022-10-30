@@ -1,12 +1,14 @@
 body{
-    background:rgb(0, 0, 0)
+    background:url(https://res.cloudinary.com/dan6hjcvr/image/upload/v1667143284/pexels-photo-260922_j98eum.webp) no-repeat center;
+    background-color: black;
+    background-position: 50% 60px;
+}
+nav{
+    overflow: auto;
 }
 
-#background_img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 77%;
+#logo{
+    padding-left: 10px;
 }
 
 span {
@@ -17,6 +19,9 @@ span {
     font-size: 17px;
 }
 
-#ftr {
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     padding-bottom: 15px;
 }
