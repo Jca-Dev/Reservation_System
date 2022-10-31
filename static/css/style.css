@@ -25,3 +25,25 @@ footer {
     width: 100%;
     padding-bottom: 15px;
 }
+
+.main-bkg{
+    background-color: aliceblue;
+    padding: 10px;
+    margin-top: 25px;
+}
+
+#text-a{
+    text-align: center;
+    padding-bottom: 20%;
+    margin-top: 20%;
+}
+
+label{
+    color: black;
+    font-weight: bold;
+}
+
+#id_remember{
+    opacity: 100;
+    position: inherit;
+}
