@@ -5,7 +5,7 @@ from .models import Base
 
 class Homepage(generic.ListView):
     model = Base
-    template_name = 'base.html'
+    template_name = 'homepage.html'
 
 
 class Reservations(generic.ListView):
