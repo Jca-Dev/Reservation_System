@@ -2,5 +2,14 @@
 {% block content %}
 <div class="content-box">
     <h1 class="page-title">Welcome to Gastro!</h1>
+
+    <div class="row">
+        <div class="col h-btn-con">
+            <button href="{% url 'menu' %}" type="button" class="btn btn-primary h-btn">View Our Menu</button>
+        </div>
+        <div class="col h-btn-con">
+            <button href="{% url 'reservations' %}" type="button" class="btn btn-primary h-btn">Create Reservation</button>
+        </div>
+    </div>
 </div>
 {% endblock %}
