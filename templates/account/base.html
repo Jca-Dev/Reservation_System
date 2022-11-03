@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script src="{% url 'js-catlog' %}"></script>
+    <script src="{% static '/admin/js/core.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'admin/css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'admin/css/widgets.css' %}">
     <title>{% block head_title %}{% endblock %}</title>
     {% block extra_head %}
     {% endblock %}

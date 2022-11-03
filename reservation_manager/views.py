@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from django.views import generic
-from .models import Base
+from .models import Base, Reservation
+from .forms import ReservationForm
+from datetime import datetime
 
 
 class Homepage(generic.ListView):
@@ -8,9 +10,14 @@ class Homepage(generic.ListView):
     template_name = 'homepage.html'
 
 
-class Reservations(generic.ListView):
-    model = Base
-    template_name = 'reservation_page.html'
+def Reservations(request):
+    if request.method == 'POST':
+        form = ReservationForm(request.POST)
+        if form.is_valid():
+            form.save()
+    else:
+        form = ReservationForm()
+    return render(request, 'reservation_page.html', {'form': form})
 
 
 class Menu(generic.ListView):
@@ -21,3 +28,8 @@ class Menu(generic.ListView):
 class Errors(generic.ListView):
     model = Base
     template_name = 'error_page.html'
+
+
+class Rescomp(generic.ListView):
+    model = Base
+    template_name = 'reservation_complete.html'

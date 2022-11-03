@@ -1,7 +1,7 @@
 body{
     background:url(https://res.cloudinary.com/dan6hjcvr/image/upload/v1667143284/pexels-photo-260922_j98eum.webp) no-repeat center;
     background-color: black;
-    background-position: 50% 60px;
+    background-position: 50% 55px;
 }
 nav{
     overflow: auto;
@@ -9,10 +9,6 @@ nav{
 
 #logo{
     padding-left: 10px;
-}
-
-span {
-    padding-inline: 6.5em;
 }
 
 .txt {
@@ -23,13 +19,15 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    padding-bottom: 15px;
 }
 
 .main-bkg{
     background-color: aliceblue;
     padding: 10px;
     margin-top: 25px;
+    width: 60%;
+    margin: auto;
+    text-align: center;
 }
 
 #text-a{
@@ -51,8 +49,24 @@ label{
 .content-box{
     background:#ffffffc4;
     padding-bottom: 45%;
+    width: 80%;
+    margin: auto;
 }
 .page-title{
     color: rgb(0, 0, 0);
     text-align: center;
+}
+
+.space{
+    padding: 10px;
+}
+
+.form-css{
+    margin: auto;
+    width: fit-content;
+    text-align: center;
+}
+
+.asteriskField {
+    display: none;
 }

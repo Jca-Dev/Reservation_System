@@ -1,7 +1,5 @@
 from django.db import models
-from django import forms
-from django.core.validators import MaxLengthValidator, MinLengthValidator
-from datetime import datetime
+import datetime
 
 
 class Base(models.Model):
@@ -17,26 +15,17 @@ DEFAULT_RESERVATION_LENGTH = H
 
 # max PERSON capacity M = Max
 M = 25
-CAPACITY_REACHED_PERSON = M
-
-# max TABLE capacity T = Max
-T = 5
-CAPACITY_REACHED_TABLE = T
+CAPACITY_REACHED = M
 
 # Dropdown list for reservation form
-INTEGER_CHOICES= [tuple([x,x]) for x in range(1,25)]
+INTEGER_CHOICES = [tuple([x, x]) for x in range(1, 26)]
 
 
 class Reservation(models.Model):
-    name = models.CharField(max_length=50, unique=True)
+    name = models.CharField(max_length=50)
     phone_number = models.IntegerField()
-    date_time = models.DateTimeField(datetime)
-    party_size = models.IntegerField()
+    party_size = models.CharField(max_length=2, choices=INTEGER_CHOICES)
+    date_time = models.DateTimeField()
 
-
-class Meta:
-    ordering = ['-date_time']
-
-
-def __str__(self):
-    return self.name
+    def __str__(self):
+        return self.name

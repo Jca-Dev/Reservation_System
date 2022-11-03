@@ -47,13 +47,19 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'cloudinary_storage',
     'django.contrib.staticfiles',
+    'bootstrap4',
+    'jquery',
+    'bootstrap_datepicker_plus',
     'cloudinary',
+    'crispy_forms',
     'reservation_manager',
 ]
 
 SITE_ID = 1
 
 LOGIN_REDIRECT_URL = 'reservations'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 ACCOUNT_EMAIL_VERIFICATION = 'none'
 
