@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "jquery": "^3.6.1",
     "jquery-datetimepicker": "^2.5.21"
   }
 }
