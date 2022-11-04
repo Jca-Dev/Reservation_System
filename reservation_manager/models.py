@@ -7,8 +7,8 @@ class Base(models.Model):
     def __str__(self):
         return self.name
 
-# ---------------------------------- Reservation -------------------------#
 
+# ---------------------------------- Reservation -------------------------#
 # Time interval hourly H = 1 hour
 H = 1
 DEFAULT_RESERVATION_LENGTH = H
