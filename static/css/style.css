@@ -30,6 +30,14 @@ footer {
     text-align: center;
 }
 
+.menu-bkg{
+    background-color: aliceblue;
+    padding: 10px;
+    margin-top: 25px;
+    width: 70%;
+    margin: auto;
+}
+
 #text-a{
     text-align: center;
     padding-bottom: 20%;
@@ -81,4 +89,33 @@ label{
 .h-btn{
     font-size: 3.5vw;
     background: brown;
+}
+
+.btn-sub{
+    margin-top: 1vw;
+}
+
+i:hover{
+    color: lightblue;
+    font-size: 1.6vw;
+}
+
+.menu-cont{
+    margin-top: 2vw;
+}
+
+.menu-list{
+    list-style-type: none;
+}
+
+h1, h2{
+    text-align: center;
+}
+
+h5{
+    text-decoration: underline;
+}
+
+.bdr {
+    border: solid black 2px;
 }

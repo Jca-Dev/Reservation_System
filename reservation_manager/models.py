@@ -13,6 +13,9 @@ class Base(models.Model):
 H = 1
 DEFAULT_RESERVATION_LENGTH = H
 
+# Person count
+P = 1
+party_size = P
 # max PERSON capacity M = Max
 M = 25
 CAPACITY_REACHED = M
