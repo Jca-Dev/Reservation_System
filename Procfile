@@ -1,1 +1,1 @@
-web: gunicorn reservation_system.wsgi
+web: gunicorn reservation_system.wsgi --preload
