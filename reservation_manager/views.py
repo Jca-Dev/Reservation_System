@@ -25,7 +25,7 @@ def Reservations(request):
                 limbo.save()
                 return render(request, 'reservation_complete.html')
             else:
-                messages.error(request,'Sorry, there isnt enough seats available. please try another date/time.')
+                messages.error(request, 'Sorry, there isnt enough seats available. please try another date/time.')
     else:
         form = ReservationForm()
     return render(request, 'reservation_page.html', {'form': form})

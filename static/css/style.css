@@ -1,23 +1,25 @@
-html{
+html {
     margin: 0;
     padding: 0;
     height: 100%;
 }
 
-body{
-    background:url(https://res.cloudinary.com/dan6hjcvr/image/upload/v1667143284/pexels-photo-260922_j98eum.webp) no-repeat center;
+body {
+    background: url(https://res.cloudinary.com/dan6hjcvr/image/upload/v1667143284/pexels-photo-260922_j98eum.webp) no-repeat center;
     background-color: black;
     background-position: 50% 55px;
     margin: 0;
     padding: 0;
     height: 100%;
+    line-height: 1.65;
 }
-nav{
+
+nav {
     overflow: auto;
     margin-bottom: 3rem;
 }
 
-#logo{
+#logo {
     padding-left: 10px;
 }
 
@@ -26,12 +28,11 @@ nav{
 }
 
 footer {
-    position: absolute;
     bottom: 0;
     width: 100%;
 }
 
-.main-bkg{
+.main-bkg {
     background-color: aliceblue;
     padding: 10px;
     width: 60%;
@@ -39,47 +40,48 @@ footer {
     text-align: center;
 }
 
-.menu-bkg{
+.menu-bkg {
     background-color: aliceblue;
     padding: 10px;
     width: 70%;
     margin: auto;
 }
 
-#text-a{
+#text-a {
     text-align: center;
     padding-bottom: 20%;
     margin-top: 20%;
 }
 
-label{
+label {
     color: black;
     font-weight: bold;
 }
 
-#id_remember{
+#id_remember {
     opacity: 100;
     position: inherit;
 }
 
-.content-box{
-    background:#ffffffc4;
-    padding-bottom: 16vw;
+.content-box {
+    background: #ffffffc4;
+    padding-bottom: 14vw;
     width: 80%;
     margin: auto;
 }
-.page-title{
+
+.page-title {
     color: rgb(0, 0, 0);
     text-align: center;
     font-size: 5vw;
     padding-top: 2vw;
 }
 
-.space{
+.space {
     padding: 10px;
 }
 
-.form-css{
+.form-css {
     margin: auto;
     width: fit-content;
     text-align: center;
@@ -89,48 +91,69 @@ label{
     display: none;
 }
 
-.h-btn-con{
+.h-btn-con {
     text-align: center;
     margin-top: 11vw;
 }
 
-.h-btn{
+.h-btn {
     font-size: 3.5vw;
     background: brown;
 }
 
-.btn-sub{
+.btn-sub {
     margin-top: 1vw;
 }
 
-i:hover{
+i:hover {
     color: lightblue;
     font-size: 1.6vw;
 }
 
-.menu-cont{
+.menu-cont {
     margin-top: 2vw;
 }
 
-.menu-list{
+.menu-list {
     list-style-type: none;
 }
 
-.error{
-    background: #ff000063;
+.messages {
     list-style-type: none;
     margin-top: 2vw;
     font-size: 24px;
+    padding: 0;
 }
 
-h1, h2{
+.success {
+    background: greenyellow;
+}
+
+.error {
+    background: #ff000063;
+}
+
+h1,
+h2 {
     text-align: center;
 }
 
-h5{
+h5 {
     text-decoration: underline;
 }
 
 .bdr {
     border: solid black 2px;
+}
+
+#div_id_name,
+#div_id_phone_number,
+#div_id_date_time,
+#div_id_party_size {
+    margin-top: 5px;
+}
+
+#id_party_size {
+    width: fit-content;
+    margin: auto;
 }
