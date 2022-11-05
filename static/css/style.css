@@ -1,10 +1,20 @@
+html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
 body{
     background:url(https://res.cloudinary.com/dan6hjcvr/image/upload/v1667143284/pexels-photo-260922_j98eum.webp) no-repeat center;
     background-color: black;
     background-position: 50% 55px;
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 nav{
     overflow: auto;
+    margin-bottom: 3rem;
 }
 
 #logo{
@@ -24,7 +34,6 @@ footer {
 .main-bkg{
     background-color: aliceblue;
     padding: 10px;
-    margin-top: 25px;
     width: 60%;
     margin: auto;
     text-align: center;
@@ -33,7 +42,6 @@ footer {
 .menu-bkg{
     background-color: aliceblue;
     padding: 10px;
-    margin-top: 25px;
     width: 70%;
     margin: auto;
 }
@@ -106,6 +114,13 @@ i:hover{
 
 .menu-list{
     list-style-type: none;
+}
+
+.error{
+    background: #ff000063;
+    list-style-type: none;
+    margin-top: 2vw;
+    font-size: 24px;
 }
 
 h1, h2{

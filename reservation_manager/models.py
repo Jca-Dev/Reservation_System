@@ -1,5 +1,5 @@
 from django.db import models
-import datetime
+from datetime import datetime, timedelta
 
 
 class Base(models.Model):
@@ -9,25 +9,13 @@ class Base(models.Model):
 
 
 # ---------------------------------- Reservation -------------------------#
-# Time interval hourly H = 1 hour
-H = 1
-DEFAULT_RESERVATION_LENGTH = H
-
-# Person count
-P = 1
-party_size = P
-# max PERSON capacity M = Max
-M = 25
-CAPACITY_REACHED = M
-
-# Dropdown list for reservation form
-INTEGER_CHOICES = [tuple([x, x]) for x in range(1, 26)]
+max_seats = 25
 
 
 class Reservation(models.Model):
     name = models.CharField(max_length=50)
-    phone_number = models.IntegerField()
-    party_size = models.CharField(max_length=2, choices=INTEGER_CHOICES)
+    phone_number = models.IntegerField(error_messages={'invalid': 'Please enter a valid phone number'})
+    party_size = models.IntegerField()
     date_time = models.DateTimeField()
 
     def __str__(self):
